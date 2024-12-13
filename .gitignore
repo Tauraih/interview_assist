@@ -53,5 +53,6 @@ celerybeat-schedule
 *.csv
 
 *.json
+*.sqlite3
 
 productionfiles/
