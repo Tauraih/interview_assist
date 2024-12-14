@@ -13,6 +13,7 @@ django_apps = [
 ]
 
 third_app_apps = [
+    "django_bootstrap5",
     # Health Check
     'health_check',
     'health_check.db',
