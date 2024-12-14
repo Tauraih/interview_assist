@@ -48,6 +48,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     firstname = models.CharField(max_length=64, null=True, blank=True)
     lastname = models.CharField(max_length=64, null=True, blank=True)
     email = models.EmailField(unique=True)
+    avatar = models.FileField(upload_to="avatar", null=True, blank=True)
     is_deleted = models.BooleanField(default=False)
     date_joined = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
