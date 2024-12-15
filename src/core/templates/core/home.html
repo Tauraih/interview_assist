@@ -1,19 +1,540 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block title %}Resume List{% endblock %}
+{% block title %}Home - AI Interview assistant{% endblock %}
 
 {% block content %}
-<h1>This home ok!</h1>
-{% endblock %}
+<section class="header-area header-one">
+    <div class="header-content-area">
+        <div class="container">
+            <div class="row justify-content-lg-end">
+                <div class="col-lg-6 col-12">
+                    <div class="header-wrapper">
+                        <div class="header-content">
+                            <h4 class="header-title-main">ACE YOUR INTERVIEWS WITH CONFIDENCE</h4>
+                            <h1 class="header-title">Your Personalized AI Interview Coach</h1>
+                            <p class="text-lg">
+                                Take the guesswork out of interview preparation! Our AI-powered platform analyzes your CV, understands your job type, and 
+                                generates tailored interview questions to help you practice effectively with instant insights into tone, content, and delivery.
+                            </p>
+                            <div class="header-btn">
+                                <a href="#" class="btn primary-btn-outline square">Get Started Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="image">
+                        <img class="rounded" src="{% static 'images/meeting-00.jpg' %}" alt="Header" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>This is home!</p>
-</body>
-</html> -->
+<!-- How it works -->
+ <section class="features-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center">
+                    <h3 class="title">How it works</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-9">
+                <div class="features-style">
+                    <div>
+                        <svg width="100" height="50" xmlns="http://www.w3.org/2000/svg">
+                            <text x="0" y="40" font-family="Arial, sans-serif" font-size="40" fill="#2463eb" font-weight="bold">01</text>
+                        </svg>
+                    </div>
+                    <h4 class="features-title">Upload your CV</h4>
+                    <div class="features-content">
+                        <p class="text">
+                            Let our AI analyze your skills, experience, and career goals —get challenges that reflect the real-world 
+                            requirements of your dream job.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-9">
+                <div class="features-style">
+                    <div>
+                        <svg width="100" height="50" xmlns="http://www.w3.org/2000/svg">
+                            <text x="0" y="40" font-family="Arial, sans-serif" font-size="40" fill="#2463eb" font-weight="bold">02</text>
+                        </svg>
+                    </div>
+                    <h4 class="features-title">Select Job Role or Industry</h4>
+                    <div class="features-content">
+                        <p class="text">
+                            Choose the position or field you're applying for. Whether it’s tech, finance, marketing, or healthcare, 
+                            we’ve got you covered.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-9">
+                <div class="features-style">
+                    <div>
+                        <svg width="100" height="50" xmlns="http://www.w3.org/2000/svg">
+                            <text x="0" y="40" font-family="Arial, sans-serif" font-size="40" fill="#2463eb" font-weight="bold">03</text>
+                        </svg>
+                    </div>
+                    <h4 class="features-title">Practice Tailored Questions</h4>
+                    <div class="features-content">
+                        <p class="text">
+                            Receive personalized questions aligned with your profile and industry trends. Flexible, 24/7 access to fit your schedule.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+ </section>
+ <!-- End how it works -->
+
+ <!-- Call to Action -->
+ <section class="call-action-area call-action-one">
+    <div class="container">
+      <div class="row align-items-center call-action-content">
+        <div class="col-xl-8 col-lg-8">
+          <div class="call-action-text">
+            <h2 class="action-title">
+              Start Preparing Smarter, Not Harder
+            </h2>
+            <p class="text-lg">
+              <span class="bold">Sign Up Today!</span> Your dream job is just a well-prepared answer away.
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4">
+          <div class="call-action-btn rounded-buttons text-lg-end">
+            <a href="javascript:void(0)" class="btn primary-btn square">
+              Get Started Now
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
+ <!-- End Call to Action -->
+
+ <!-- Benefits -->
+  <!--====== ABOUT ONE PART START ======-->
+<section class="about-area about-one">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-12">
+             <div class="about-title text-center">
+                <h2 class="title fw-bold">Benefits of Using Our AI Interview Coach</h2>
+             </div>
+          </div>
+       </div>
+       <!-- row -->
+       <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-8">
+             <div class="single-about-items">
+                <div class="items-icon">
+                   <i class="lni lni-investment"></i>
+                </div>
+                <div class="items-content">
+                   <h4 class="items-title">Tailored to Your Profile</h4>
+                   <p class="text">
+                    Get questions that match your skills, experience, and job role—no generic templates.
+                   </p>
+                </div>
+             </div>
+             <!-- single about items -->
+          </div>
+          <div class="col-md-4 col-sm-8">
+             <div class="single-about-items">
+                <div class="items-icon">
+                   <i class="lni lni-handshake"></i>
+                </div>
+                <div class="items-content">
+                   <h4 class="items-title">Real-Time AI Feedback</h4>
+                   <p class="text">
+                    Improve your responses with instant insights into tone, content, and delivery.
+                   </p>
+                </div>
+             </div>
+             <!-- single about items -->
+          </div>
+          <div class="col-md-4 col-sm-8">
+             <div class="single-about-items">
+                <div class="items-icon">
+                   <i class="lni lni-handshake"></i>
+                </div>
+                <div class="items-content">
+                   <h4 class="items-title">Boost Your Confidence</h4>
+                   <p class="text">
+                    Practice repeatedly to perfect your answers.
+                   </p>
+                </div>
+             </div>
+             <!-- single about items -->
+          </div>
+          <div class="col-md-4 col-sm-8">
+             <div class="single-about-items">
+                <div class="items-icon">
+                   <i class="lni lni-handshake"></i>
+                </div>
+                <div class="items-content">
+                   <h4 class="items-title">Stay Ahead of the Curve</h4>
+                   <p class="text">
+                    Use AI to anticipate interview trends and gain a competitive edge.
+                   </p>
+                </div>
+             </div>
+             <!-- single about items -->
+          </div>
+          <div class="col-md-4 col-sm-8">
+             <div class="single-about-items">
+                <div class="items-icon">
+                   <i class="lni lni-handshake"></i>
+                </div>
+                <div class="items-content">
+                   <h4 class="items-title">On-Demand Practice</h4>
+                   <p class="text">
+                    Flexible, 24/7 access to fit your schedule.
+                   </p>
+                </div>
+             </div>
+             <!-- single about items -->
+          </div>
+          <div class="col-md-4 col-sm-8">
+             <div class="single-about-items">
+                <div class="items-icon">
+                   <i class="lni lni-bullhorn"></i>
+                </div>
+                <div class="items-content">
+                   <h4 class="items-title">Get Feedback That Matters</h4>
+                   <p class="text">
+                      Focus on areas of improvement to make the best impression.
+                   </p>
+                </div>
+             </div>
+             <!-- single about items -->
+          </div>
+       </div>
+       <!-- row -->
+    </div>
+    <!-- container -->
+ </section>
+  <!-- End Benefits -->
+
+  <!-- Pricing -->
+   <!--====== PRICING STYLE ONE START ======-->
+<section class="pricing-area pricing-one">
+    <div class="container">
+       <div class="row justify-content-center">
+          <div class="col-xxl-6 col-xl-7 col-lg-8">
+             <div class="section-title text-center">
+                <h2 class="mb-3 fw-bold">Our Pricing</h2>
+                <p class="text-lg">
+                   Morem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+                   quam suscipit distinctio optio, quaerat consequatur labore
+                   pariatur rerum.
+                </p>
+             </div>
+          </div>
+       </div>
+       <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-7 col-sm-9">
+             <div class="pricing-style-one">
+                <div class="pricing-header text-center">
+                   <h5 class="sub-title">Basic</h5>
+                   <span class="price">$199</span>
+                   <h5 class="year">Per year</h5>
+                </div>
+                <div class="pricing-list">
+                   <ul>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Carefully crafted
+                         components
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Amazing page
+                         examples
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Super friendly
+                         support team
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Awesome Support
+                      </li>
+                   </ul>
+                </div>
+                <div class="pricing-btn rounded-buttons text-center">
+                   <a
+                      class="btn primary-btn square"
+                      href="javascript:void(0)"
+                      >
+                   GET STARTED
+                   </a>
+                </div>
+                <div class="bottom-shape">
+                   <svg
+                      data-name="Layer 1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 350 112.35"
+                      >
+                      <defs>
+                         <style>
+                            .color-1 {
+                            fill: #2bdbdc;
+                            isolation: isolate;
+                            }
+                            .cls-1 {
+                            opacity: 0.1;
+                            }
+                            .cls-2 {
+                            opacity: 0.2;
+                            }
+                            .cls-3 {
+                            opacity: 0.4;
+                            }
+                            .cls-4 {
+                            opacity: 0.6;
+                            }
+                         </style>
+                      </defs>
+                      <title>bottom-part1</title>
+                      <g>
+                         <g data-name="Group 747">
+                            <path
+                               data-name="Path 294"
+                               class="cls-1 color-1"
+                               d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 297"
+                               class="cls-2 color-1"
+                               d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 296"
+                               class="cls-3 color-1"
+                               d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 295"
+                               class="cls-4 color-1"
+                               d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                               transform="translate(0 0)"
+                               />
+                         </g>
+                      </g>
+                   </svg>
+                </div>
+             </div>
+             <!-- single pricing -->
+          </div>
+          <div class="col-lg-4 col-md-7 col-sm-9">
+             <div class="pricing-style-one">
+                <div class="pricing-header text-center">
+                   <h5 class="sub-title">Pro</h5>
+                   <span class="price">$399</span>
+                   <h5 class="year">Per year</h5>
+                </div>
+                <div class="pricing-list">
+                   <ul>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Carefully crafted
+                         components
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Amazing page
+                         examples
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Super friendly
+                         support team
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Awesome Support
+                      </li>
+                   </ul>
+                </div>
+                <div class="pricing-btn rounded-buttons text-center">
+                   <a
+                      class="btn primary-btn square"
+                      href="javascript:void(0)"
+                      >
+                   GET STARTED
+                   </a>
+                </div>
+                <div class="bottom-shape">
+                   <svg
+                      data-name="Layer 1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 350 112.35"
+                      >
+                      <defs>
+                         <style>
+                            .color-1 {
+                            fill: #2bdbdc;
+                            isolation: isolate;
+                            }
+                            .cls-1 {
+                            opacity: 0.1;
+                            }
+                            .cls-2 {
+                            opacity: 0.2;
+                            }
+                            .cls-3 {
+                            opacity: 0.4;
+                            }
+                            .cls-4 {
+                            opacity: 0.6;
+                            }
+                         </style>
+                      </defs>
+                      <title>bottom-part1</title>
+                      <g>
+                         <g data-name="Group 747">
+                            <path
+                               data-name="Path 294"
+                               class="cls-1 color-1"
+                               d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 297"
+                               class="cls-2 color-1"
+                               d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 296"
+                               class="cls-3 color-1"
+                               d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 295"
+                               class="cls-4 color-1"
+                               d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                               transform="translate(0 0)"
+                               />
+                         </g>
+                      </g>
+                   </svg>
+                </div>
+             </div>
+             <!-- single pricing -->
+          </div>
+          <div class="col-lg-4 col-md-7 col-sm-9">
+             <div class="pricing-style-one">
+                <div class="pricing-header text-center">
+                   <h5 class="sub-title">Enterprise</h5>
+                   <span class="price">$699</span>
+                   <h5 class="year">Per year</h5>
+                </div>
+                <div class="pricing-list">
+                   <ul>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Carefully crafted
+                         components
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Amazing page
+                         examples
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Super friendly
+                         support team
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Awesome Support
+                      </li>
+                   </ul>
+                </div>
+                <div class="pricing-btn rounded-buttons text-center">
+                   <a
+                      class="btn primary-btn square"
+                      href="javascript:void(0)"
+                      >
+                   GET STARTED
+                   </a>
+                </div>
+                <div class="bottom-shape">
+                   <svg
+                      data-name="Layer 1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 350 112.35"
+                      >
+                      <defs>
+                         <style>
+                            .color-1 {
+                            fill: #2bdbdc;
+                            isolation: isolate;
+                            }
+                            .cls-1 {
+                            opacity: 0.1;
+                            }
+                            .cls-2 {
+                            opacity: 0.2;
+                            }
+                            .cls-3 {
+                            opacity: 0.4;
+                            }
+                            .cls-4 {
+                            opacity: 0.6;
+                            }
+                         </style>
+                      </defs>
+                      <title>bottom-part1</title>
+                      <g>
+                         <g data-name="Group 747">
+                            <path
+                               data-name="Path 294"
+                               class="cls-1 color-1"
+                               d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 297"
+                               class="cls-2 color-1"
+                               d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 296"
+                               class="cls-3 color-1"
+                               d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 295"
+                               class="cls-4 color-1"
+                               d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                               transform="translate(0 0)"
+                               />
+                         </g>
+                      </g>
+                   </svg>
+                </div>
+             </div>
+             <!-- single pricing -->
+          </div>
+       </div>
+       <!-- row -->
+    </div>
+    <!-- container -->
+ </section>
+ <!--====== PRICING STYLE ONE ENDS ======-->
+{% endblock %}
