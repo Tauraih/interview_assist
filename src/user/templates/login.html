@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}User login - AI Interview assistant{% endblock %}
+
+{% block content %}
+<div>
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li class="error">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <h1>Sign in</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">sign in</button>
+    </form>
+</div>
+{% endblock %}

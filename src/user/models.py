@@ -61,6 +61,9 @@ class User(AbstractBaseUser, PermissionsMixin):
         default_related_name = 'users'
         verbose_name = 'User'
         verbose_name_plural = 'Users'
+    
+    def get_by_natural_key(self, email):
+        return self.objects.get(email=email)
 
     def __str__(self):
         return f"{self.firstname} | {self.email}"
